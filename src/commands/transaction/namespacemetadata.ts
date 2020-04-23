@@ -93,6 +93,7 @@ export default class extends AnnounceTransactionsCommand {
             transactions: [metadataTransaction],
             maxFee,
             signerMultisigInfo,
+            isAggregate: targetAccount.publicKey === account.publicKey,
             isAggregateBonded: targetAccount.publicKey !== account.publicKey,
         }
 
